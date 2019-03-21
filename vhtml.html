@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	 <script src="vuejs/vue.min.js" type="text/javascript" ></script>
+
+</head>
+<body>
+      <div id="Cards">
+           <header>{{title}}</header>
+           <div v-html="conetent"></div>
+      </div>
+	  
+</body>
+ <script type="text/javascript">
+	    var Cards=new Vue({
+	    	el:'#Cards',
+	    	data:{
+	    	 title:"danger",
+             conetent:"<p>dangerpppppp</p><span>1321321</span>"
+	    	 
+	    	} 
+	    })	
+	 	 
+	 </script>
+</html>
