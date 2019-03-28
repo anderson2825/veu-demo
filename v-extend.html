@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>todo</title>
+	<script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+	<div id="mount-point"></div>
+
+	<script>
+		var Profile = Vue.extend({
+			template:'<p>{{firstNname}} and {{lastName}}</p>',
+			data(){
+				return {
+					firstNname:"jack",
+					lastName:"chen"
+				}
+			}
+		})
+		new Profile().$mount('#mount-point');
+	</script>
+<!-- 	使用基础 Vue 构造器，创建一个“子类”。参数是一个包含组件选项的对象。
+ 	data 选项是特例，需要注意 - 在 Vue.extend() 中它必须是函数 -->
+</body>
+</html>
